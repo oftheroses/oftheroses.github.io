@@ -2,3 +2,8 @@
     font-family:"BabyDoll";
     src: url("files/BabyDoll.ttf") format(".ttf");
 }
+
+@font-face {
+    font-family:"Spinnaker";
+    src: url("files/Spinnaker.ttf") format(".ttf");
+}
