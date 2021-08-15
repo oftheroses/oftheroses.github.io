@@ -7,3 +7,11 @@
     font-family:"Spinnaker";
     src: url("files/Spinnaker.ttf") format(".ttf");
 }
+
+.divOne {
+    box-sizing: border-box;
+}
+
+.divOne img {
+    height: 500px;
+}
