@@ -36,7 +36,7 @@
 }
 
 /* capricornus header */
-.capricornus {
+#capricornus {
     display: block;
     height: 132px;
     width: 199px;
@@ -103,16 +103,52 @@
     background-color: #FFD5BB;
     color: #FF4040;
     font-family: BabyDoll;
-    font-size: 50px;
+    font-size: 55px;
     font-weight: bold;
+    /* why this? */
+    margin-top: -4px;
     line-height: 70px;
     height: 72px;
     width: 100%
 }
 
+.stripText {
+    position: relative;
+    display: block;
+    left: 10px;
+}
 .strip img {
     float: left;
-    margin-left: 75px;
+    margin-left: 250px;
     height: 75px;
     width: 75px;
+}
+
+.divTwo {
+    background-image: url("files/masarap_bg.png");
+    height: 900px;
+    position: absolute;
+    width: 100%;
+}
+
+.divTwoTextbox {
+    background-color: white;
+    font-family: Spinnaker;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.7em;
+    padding: 25px;
+    height: 250px;
+    width: 750px;
+
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#masarapTitle {
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
