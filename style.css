@@ -14,14 +14,18 @@
     margin: 0;
 }
 
+a :visited {
+    text-decoration: none;
+}
+
 /*#region Sidebar*/
 .sidebar {
-    background-color: #FFFBEB;
+    /*background-color: #FFFBEB;*/
     box-shadow: -5px 0px 6px 2px rgba(0, 0, 0, 0.1);
     height: 100%;
     position: fixed;
 
-    width: 15%;
+    width: 16vw;
 
     top: 0;
     right: 0;
@@ -29,12 +33,11 @@
 }
 
 .sidebar a {
-    color: white;
     font-family: Spinnaker;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: bold;
-    line-height: 45px;
     text-decoration: none;
+    text-shadow:rgba(0, 0, 0, 0.4) 0px 4px 5px;
 }
 
 #capricornus {
@@ -46,32 +49,131 @@
     margin-right: auto;
 }
 
-#contact {
-    background-color: black;
-    height: 55px;
-}
-
-#contact img {
-    float: left;
-    height: 55px;
-    width: 55px;
-    margin-top: 5px;
+#aboutwork {
+    margin-top: 25px;
     margin-left: 10px;
 }
 
-#projects img {
-    float: left;
-    height: 55px;
-    width: 55px;
-    margin-top: 5px;
+#aboutwork a {
+    background-color: #FF4040;
+    color: white;
+}
+
+#aboutworkText {
+    margin-top: -50px;
+    margin-left: 55px;
+}
+
+#contactlinks {
+    margin-top: 40px;
     margin-left: 10px;
+}
+
+#contactlinks a {
+    background-color: #FF4040;
+    color: white;
+}
+
+#contactlinksText {
+    margin-top: -50px;
+    margin-left: 55px;
+}
+
+#store {
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+#store a {
+    background-color: #FF4040;
+    color: white;
+}
+
+#storeText {
+    margin-top: -50px;
+    margin-left: 55px;
+}
+
+#instagram {
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+#instagram a {
+    background-color: #FF4040;
+    color: white;
+}
+
+#instagramText {
+    margin-top: -50px;
+    margin-left: 55px;
+}
+
+#patreon {
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+#patreon a {
+    background-color: #FF4040;
+    color: white;
+}
+
+#patreonText {
+    margin-top: -50px;
+    margin-left: 55px;
+}
+
+#tiktok {
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+#tiktok a {
+    background-color: #FF4040;
+    color: white;
+}
+
+#tiktokText {
+    margin-top: -50px;
+    margin-left: 55px;
+}
+
+#twitter {
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+#twitter a {
+    background-color: #FF4040;
+    color: white;
+}
+
+#twitterText {
+    margin-top: -50px;
+    margin-left: 55px;
+}
+
+#youtube {
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+#youtube a {
+    background-color: #FF4040;
+    color: white;
+}
+
+#youtubeText {
+    margin-top: -50px;
+    margin-left: 55px;
 }
 /*#endregion Sidebar*/
 /*#region divOne*/
 .divOne {
     position: relative;
     width: 100%;
-    right: 15%;
+    right: 16%;
 }
 
 #divOneBG {
