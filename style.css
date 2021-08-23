@@ -20,13 +20,17 @@ a :visited {
 
 /*#region Sidebar*/
 .sidebar {
-    background:white;
-
+    /*background: rgb(255,235,235);
+    background: -moz-linear-gradient(0deg, rgba(255,235,235,1) 0%, rgba(255,246,235,1) 12%, rgba(252,255,235,1) 27%, rgba(238,255,235,1) 43%, rgba(235,253,255,1) 59%, rgba(235,242,255,1) 73%, rgba(245,235,255,1) 87%, rgba(255,235,255,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(255,235,235,1) 0%, rgba(255,246,235,1) 12%, rgba(252,255,235,1) 27%, rgba(238,255,235,1) 43%, rgba(235,253,255,1) 59%, rgba(235,242,255,1) 73%, rgba(245,235,255,1) 87%, rgba(255,235,255,1) 100%);
+    background: linear-gradient(0deg, rgba(255,235,235,1) 0%, rgba(255,246,235,1) 12%, rgba(252,255,235,1) 27%, rgba(238,255,235,1) 43%, rgba(235,253,255,1) 59%, rgba(235,242,255,1) 73%, rgba(245,235,255,1) 87%, rgba(255,235,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffebeb",endColorstr="#ffebff",GradientType=1);
+*/
     box-shadow: -5px 0px 6px 2px rgba(0, 0, 0, 0.1);
     height: 100%;
-    width: 265px;
+    width: 291px;
+    overflow: auto;
     position: fixed;
-
     top: 0;
     right: 0;
     z-index: 1;
@@ -34,17 +38,18 @@ a :visited {
 
 .sidebar a {
     font-family: Spinnaker;
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: -0.5px;
     text-decoration: none;
-    text-shadow:rgba(0, 0, 0, 0.4) 0px 4px 5px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
 }
 
 #capricornus {
     display: block;
-    height: 132px;
-    width: 199px;
-    margin-top: 10px;
+    height: 163px;
+    width: 245px;
+    margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -55,11 +60,11 @@ a :visited {
 }
 
 #aboutwork a {
-    background-color: #ffadad;
-    color: white;
+    color: #520000;
 }
 
 #aboutworkText {
+    background-color: #ffadad;
     margin-top: -50px;
     margin-left: 55px;
 }
@@ -70,11 +75,11 @@ a :visited {
 }
 
 #contactlinks a {
-    background-color: #ffd6a5;
-    color: white;
+    color: #522D00;
 }
 
 #contactlinksText {
+    background-color: #ffd6a5;
     margin-top: -50px;
     margin-left: 55px;
 }
@@ -85,11 +90,11 @@ a :visited {
 }
 
 #store a {
-    background-color: #fdffb6;
-    color: white;
+    color: #4F5200;
 }
 
 #storeText {
+    background-color: #fdffb6;
     margin-top: -50px;
     margin-left: 55px;
 }
@@ -100,11 +105,11 @@ a :visited {
 }
 
 #instagram a {
-    background-color: #caffbf;
-    color: white;
+    color: #0E5200;
 }
 
 #instagramText {
+    background-color: #caffbf;
     margin-top: -50px;
     margin-left: 55px;
 }
@@ -115,11 +120,11 @@ a :visited {
 }
 
 #patreon a {
-    background-color: #9bf6ff;
-    color: white;
+    color: #004B52;
 }
 
 #patreonText {
+    background-color: #9bf6ff;
     margin-top: -50px;
     margin-left: 55px;
 }
@@ -130,11 +135,11 @@ a :visited {
 }
 
 #tiktok a {
-    background-color: #a0c4ff;
-    color: white;
+    color: #001F52;
 }
 
 #tiktokText {
+    background-color: #a0c4ff;
     margin-top: -50px;
     margin-left: 55px;
 }
@@ -145,11 +150,11 @@ a :visited {
 }
 
 #twitter a {
-    background-color: #FF4040;
-    color: white;
+    color: #290052;
 }
 
 #twitterText {
+    background-color: #cc99ff;
     margin-top: -50px;
     margin-left: 55px;
 }
@@ -160,11 +165,11 @@ a :visited {
 }
 
 #youtube a {
-    background-color: #FF4040;
-    color: white;
+    color: #520052;
 }
 
 #youtubeText {
+    background-color: #ffc6ff;
     margin-top: -50px;
     margin-left: 55px;
 }
@@ -172,7 +177,7 @@ a :visited {
 /*#region divOne*/
 .divOne {
     position: relative;
-    width: calc(100% - 265px);
+    width: calc(100% - 291px);
 }
 
 #divOneBG {
@@ -183,7 +188,7 @@ a :visited {
     color: #FF4040;
     display: inline;
     font-family: BabyDoll;
-    font-size: 2vw;
+    font-size: 1.75vw;
     text-align: center;
     right: 4vw;
     top: 5vh;
@@ -210,27 +215,28 @@ a :visited {
 /*#region strip*/
 .strip {
     background-color: #FFD5BB;
-    color: #FF4040;
-    display: inline-block;
-    font-family: BabyDoll;
-    font-size: 55px;
-    font-weight: bold;
-    line-height: 70px;
-    height: 72px;
-    width: calc(100% - 265px);
-}
-
-.stripText {
-    position: relative;
-    display: inline;
-    left: 10px;
+    height: 8vh;
+    /* why this? */
+    margin-top: -4px;
+    overflow: hidden;
+    width: calc(100% - 291px);
 }
 
 .strip img {
     float: left;
     margin-left: 250px;
-    height: 75px;
-    width: 75px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.stripText {
+    font-family: BabyDoll;
+    font-size: 3.5vw;
+    font-weight: bold;
+    color: #FF4040;
+    line-height: 7.5vh;
+    position: relative;
+    left: 25px;
 }
 /*#endregion strip*/
 /*#region divTwo*/
@@ -238,7 +244,7 @@ a :visited {
     display: block;
     height: 500px;
     background-image: url("/files/masarap_bg.png");
-    margin-right: 250px;
+    width: calc(100% - 291px);
 }
 
 #masarapTitle {
