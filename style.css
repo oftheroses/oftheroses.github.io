@@ -1,12 +1,12 @@
 /*#region Fonts*/
 @font-face {
     font-family:"BabyDoll";
-    src: url("files/BabyDoll.ttf") format(".ttf");
+    src: url("core/BabyDoll.ttf") format(".ttf");
 }
 
 @font-face {
     font-family:"Spinnaker";
-    src: url("files/Spinnaker.ttf") format(".ttf");
+    src: url("core/Spinnaker.ttf") format(".ttf");
 }
 
 * {
@@ -204,6 +204,34 @@ a :visited {
     margin-left: 55px;
 }
 /*#endregion Sidebar*/
+/*#region strip*/
+.strip {
+    background: rgb(255,234,220);
+    background: -moz-linear-gradient(90deg, rgba(255,234,220,1) 0%, rgba(223,255,210,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(255,234,220,1) 0%, rgba(223,255,210,1) 100%);
+    background: linear-gradient(90deg, rgba(255,234,220,1) 0%, rgba(223,255,210,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffeadc",endColorstr="#dfffd2",GradientType=1);
+
+    border-top: 2px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+
+    height: 8vh;
+    width: calc(100% - 291px);
+}
+
+.strip img {
+    float: left;
+    margin-left: 13vw;
+    height: 100%;
+}
+
+.stripText {
+    font-family: BabyDoll;
+    font-size: 3.5vw;
+    line-height: 7.5vh;
+    margin-left: 19vw;
+}
+/*#endregion strip*/
 /*#region divOne*/
 .divOne {
     position: relative;
@@ -243,39 +271,11 @@ a :visited {
     text-decoration: none;
 }
 /*#endregion divOne*/
-/*#region strip*/
-.strip {
-    background: rgb(255,234,220);
-    background: -moz-linear-gradient(90deg, rgba(255,234,220,1) 0%, rgba(223,255,210,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(255,234,220,1) 0%, rgba(223,255,210,1) 100%);
-    background: linear-gradient(90deg, rgba(255,234,220,1) 0%, rgba(223,255,210,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffeadc",endColorstr="#dfffd2",GradientType=1);
-
-    border-top: 2px solid rgba(0, 0, 0, 0.3);
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-
-    height: 8vh;
-    width: calc(100% - 291px);
-}
-
-.strip img {
-    float: left;
-    margin-left: 13vw;
-    height: 100%;
-}
-
-.stripText {
-    font-family: BabyDoll;
-    font-size: 3.5vw;
-    line-height: 7.5vh;
-    margin-left: 19vw;
-}
-/*#endregion strip*/
 /*#region divTwo*/
 .divTwo {
     font-family: Spinnaker;
     height: 1050px;
-    background-image: url("/files/masarap_bg.png");
+    background-image: url("/home/masarap_bg.png");
     position: relative;
     width: calc(100% - 291px);
 }
@@ -289,15 +289,15 @@ a :visited {
 }
 
 #divTwoTextboxTop {
-    background: rgb(255,231,215);
-    background: -moz-linear-gradient(180deg, rgba(255,231,215,1) 0%, rgba(255,255,255,1) 100%);
-background: -webkit-linear-gradient(180deg, rgba(255,231,215,1) 0%, rgba(255,255,255,1) 100%);
-background: linear-gradient(180deg, rgba(255,231,215,1) 0%, rgba(255,255,255,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffe7d7",endColorstr="#ffffff",GradientType=1);
+    background: rgb(255,222,165);
+    background: -moz-linear-gradient(180deg, rgba(255,222,165,1) 0%, rgba(255,247,234,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(255,222,165,1) 0%, rgba(255,247,234,1) 100%);
+    background: linear-gradient(180deg, rgba(255,222,165,1) 0%, rgba(255,247,234,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffdea5",endColorstr="#fff7ea",GradientType=1);
 
-    /*-webkit-box-shadow: 5px 0px 0px 5px #FD3A4C;
-    -moz-box-shadow: 0px 0px 0px 5px #FD3A4C;*/
-    box-shadow: 0px 0px 0px 2px #79010D;
+    -webkit-box-shadow: 0px 0px 1px 2px #ffb63a;
+    -moz-box-shadow: 0px 0px 1px 2px #ffb63a;
+    box-shadow: 0px 0px 1px 2px #ffb63a;
 
     color: #323232;
     font-size: 1.5vw;
@@ -314,29 +314,34 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffe7d7",endCo
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 25px;
-    padding-bottom: 25px;
     width: 60vw;
 }
 
 #divTwoTextboxBottom {
-    background: rgb(255,231,215);
-    background: -moz-linear-gradient(0deg, rgba(255,231,215,1) 0%, rgba(255,255,255,1) 100%);
-    background: -webkit-linear-gradient(0deg, rgba(255,231,215,1) 0%, rgba(255,255,255,1) 100%);
-    background: linear-gradient(0deg, rgba(255,231,215,1) 0%, rgba(255,255,255,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffe7d7",endColorstr="#ffffff",GradientType=1);
+    background: rgb(255,222,165);
+    background: -moz-linear-gradient(0deg, rgba(255,222,165,1) 0%, rgba(255,247,234,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(255,222,165,1) 0%, rgba(255,247,234,1) 100%);
+    background: linear-gradient(0deg, rgba(255,222,165,1) 0%, rgba(255,247,234,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffdea5",endColorstr="#fff7ea",GradientType=1);
 
-    /*-webkit-box-shadow: 5px 0px 0px 5px #FD3A4C;
-    -moz-box-shadow: 0px 0px 0px 5px #FD3A4C;*/
-    box-shadow: 0px 0px 0px 2px #79010D;
+    -webkit-box-shadow: 0px 0px 1px 2px #ffb63a;
+    -moz-box-shadow: 0px 0px 1px 2px #ffb63a;
+    box-shadow: 0px 0px 1px 2px #ffb63a;
 
     color: #323232;
     font-size: 1.5vw;
     font-weight: 900;
     line-height: 1.7;
+    padding-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    width: 60vw;
     text-align: center;
+    width: 60vw;
 }
 /*#endregion divTwo*/
+/*#region divThree */
+.divThree {
+    height: 550px;
+    width: calc(100% - 291px);
+}
+/*#endregion divThree */
