@@ -1,2 +1,2 @@
 # oftheroses.github.io
-hewwo
+My website! Coded myself with icons from flaticon and fontawesome 🖤
