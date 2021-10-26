@@ -57,6 +57,229 @@ a :visited {
     background-image: url(files/down.png);
   }
 /*#endregion base*/
+/*#region audio-player*/
+.audioplayer {
+  font-family: Spinnaker;
+  background: thistle;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px 30px;
+  position: relative;
+  overflow: hidden;
+  width: 380px;
+}
+
+.audioplayer body {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.audioplayer i {
+  cursor: pointer;
+}
+
+.progress-area .track-timer, .controls,
+.track-list .header, .track-list ul li {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.track-details {
+  padding-bottom: 30px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.track-details {
+  font-size: 20px;
+  color: #323232;
+}
+
+.track-details .name {
+  font-weight: bold;
+  text-shadow: 0.255px 0.25px 0px #323232;
+}
+
+.progress-area {
+  background: #f0f0f0;
+  border-radius: 50px;
+  cursor: pointer;
+  height: 10px;
+  width: 100%;
+}
+
+.progress-area .progress-bar {
+  background: linear-gradient(90deg, red 0%, blue 100%);
+  border-radius: inherit;
+  height: inherit;
+  position: relative;
+  width: 0%;
+}
+
+.progress-bar::before {
+  background: inherit;
+  border-radius: 50%;
+  content: "";
+  height: 12px;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  right: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  z-index: 2;
+}
+
+.progress-area:hover .progress-bar::before {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.progress-area .track-timer {
+  margin-top: 10px;
+}
+
+.track-timer span{
+  font-size: 15px;
+  color: #323232;
+}
+
+.controls {
+  margin: 40px 0 5px 0;
+}
+
+.controls i {
+  background: linear-gradient(green 0%, red 100%);
+  background-clip: text;
+  font-size: 28px;
+  user-select: none;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.controls i:nth-child(2),
+.controls i:nth-child(4) {
+  font-size: 43px;
+}
+.controls #prev {
+  margin-right: -13px;
+}
+
+.controls #next {
+  margin-left: -13px;
+}
+
+.controls .play-pause {
+  align-items: center;
+  background: linear-gradient(grey 0%, white 100%);
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px red;
+  cursor: pointer;
+  display: flex;
+  height: 54px;
+  justify-content: center;
+  width: 54px;
+}
+
+.play-pause::before {
+  background: linear-gradient(green 0%, blue 100%);
+  border-radius: inherit;
+  content: "";
+  height: 43px;
+  position: absolute;
+  width: 43px;
+}
+
+.play-pause i {
+  background: inherit;
+  background-clip: text;
+  height: 43px;
+  line-height: 43px;
+  position: absolute;
+  text-align: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 43px;
+}
+
+.track-list {
+  background: gainsboro;
+  bottom: -55%;
+  box-sizing: border-box;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  padding: 5px 20px;
+  pointer-events: none;
+  position: absolute;
+  transition: all 0.15s ease-out;
+  width: 100%;
+  z-index: 5;
+}
+
+.track-list.show {
+  bottom: 0;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.header .row {
+  align-items: center;
+  color: #323232;
+  display: flex;
+  font-size: 19px;
+}
+
+.header .row i {
+  cursor: default;
+}
+
+.header #close {
+  font-size: 22px;
+  color: #323232;
+}
+
+.track-list ul {
+  margin: 5px 0;
+  max-height: 100%;
+  overflow: auto;
+}
+
+.track-list ul::-webkit-scrollbar {
+  width: 0px;
+}
+
+.track-list ul li {
+  border-bottom: 1px solid #E5E5E5;
+  color: #323232;
+  cursor: pointer;
+  display: flex;
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.track-list ul li:last-child {
+  border-bottom: 0px;
+}
+
+.track-list ul li .row span {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+ul li .audio-duration {
+  font-size: 17px;
+}
+
+ul li.playing {
+  color: olive;
+  pointer-events: none;
+}
+/*#endregion audio-player*/
 /*#region Sidebar*/
 .sidebar {
     background: rgb(255,235,235);
@@ -309,15 +532,16 @@ a :visited {
 /*#region divTwo*/
 .divTwo {
     font-family: Spinnaker;
-    height: 1050px;
+    height: 100%;
     background-image: url("/home/masarap_bg.png");
+    padding-top: 30px;
+    padding-bottom: 30px;
     position: relative;
     width: calc(100% - 291px);
 }
 
 #masarapTitle {
     display: block;
-    padding: 30px;
     margin-left: auto;
     margin-right: auto;
     width: 41vw;
@@ -379,4 +603,4 @@ a :visited {
     height: 550px;
     width: calc(100% - 291px);
 }
-/*#endregion divThree */
+/*#endregion divThree*/
