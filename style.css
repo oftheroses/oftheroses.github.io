@@ -9,6 +9,11 @@
     src: url("core/Spinnaker.ttf") format(".ttf");
 }
 
+@font-face {
+  font-family:"MinionProMedium";
+  src: url("core/MinionPro.otf") format(".otf");
+}
+
 * {
     margin: 0;
 }
@@ -16,6 +21,7 @@
 a :visited {
     text-decoration: none;
 }
+
 ::-moz-selection {
     color: #FFFFFF;
     background: #323232;

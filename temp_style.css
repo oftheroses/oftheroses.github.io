@@ -1,0 +1,288 @@
+/* #region base */
+@font-face {
+  font-family:"MinionProMedium";
+  src: url("core/MinionProMediumItalic.otf");
+}
+
+@font-face {
+  font-family:"MinionProBold";
+  src: url("core/MinionProBold.otf");
+}
+
+* {
+  margin: 0;
+}
+
+a :visited {
+  text-decoration: none;
+}
+
+::-moz-selection {
+  color: #FFFFFF;
+  background: #323232;
+}
+
+::selection {
+  color: #FFFFFF;
+  background: #323232;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FF4040;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(255,235,235);
+  background: -moz-linear-gradient(0deg, rgba(255,235,235,1) 0%, rgba(255,246,235,1) 12%, rgba(252,255,235,1) 27%, rgba(238,255,235,1) 43%, rgba(235,253,255,1) 59%, rgba(235,242,255,1) 73%, rgba(245,235,255,1) 87%, rgba(255,235,255,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(255,235,235,1) 0%, rgba(255,246,235,1) 12%, rgba(252,255,235,1) 27%, rgba(238,255,235,1) 43%, rgba(235,253,255,1) 59%, rgba(235,242,255,1) 73%, rgba(245,235,255,1) 87%, rgba(255,235,255,1) 100%);
+  background: linear-gradient(0deg, rgba(255,235,235,1) 0%, rgba(255,246,235,1) 12%, rgba(252,255,235,1) 27%, rgba(238,255,235,1) 43%, rgba(235,253,255,1) 59%, rgba(235,242,255,1) 73%, rgba(245,235,255,1) 87%, rgba(255,235,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffebeb",endColorstr="#ffebff",GradientType=1);
+}
+
+::-webkit-scrollbar-button:single-button {
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+  background-image: url(files/up.png);
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  background-image: url(files/down.png);
+}
+/* #endregion base */
+.temp {
+  background-image: url(/core/tempbg.jpg);
+  background-size: cover;
+  text-align: center;
+  max-width: 100%;
+}
+
+.temp a {
+  color: white;
+  text-decoration: none;
+}
+
+#box-container {
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  width: 435px;
+}
+
+#maria-header {
+  background-color: lightskyblue;
+  border: solid white 5px;
+  border-radius: 5px;
+  font-family: MinionProBold;
+  font-size: 30px;
+  height: 50px;
+  margin-bottom: 125px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 425px;
+}
+
+#div-link {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  text-shadow: 0.5px 0.5px 1px rgb(255, 255, 255);
+}
+
+#maria-box {
+background-color: white;
+border-radius: 5px;
+font-family: MinionProMedium;
+font-size: 20px;
+height: 90px;
+padding-top: 10px;
+text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+width: 425px;
+}
+
+#maria-box a {
+  color: cornflowerblue;
+  font-weight: bold;
+  text-shadow: none;
+}
+
+#ale-header {
+  background-color: lightskyblue;
+  border: solid white 5px;
+  border-radius: 5px;
+  font-family: MinionProBold;
+  font-size: 30px;
+  height: 50px;
+  margin-bottom: 125px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 425px;
+}
+
+#ale-box {
+  background-color: white;
+  border-radius: 5px;
+  font-family: MinionProMedium;
+  font-size: 20px;
+  height: 90px;
+  padding-top: 10px;
+  text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+  width: 425px;
+}
+
+#ale-box a {
+  color: cornflowerblue;
+  font-weight: bold;
+  text-shadow: none;
+}
+
+#mir-header {
+  background-color: lightskyblue;
+  border: solid white 5px;
+  border-radius: 5px;
+  font-family: MinionProBold;
+  font-size: 30px;
+  height: 50px;
+  margin-bottom: 95px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 425px;
+}
+
+#mir-box {
+  background-color: white;
+  border-radius: 5px;
+  font-family: MinionProMedium;
+  font-size: 20px;
+  height: 60px;
+  padding-top: 10px;
+  text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+  width: 425px;
+}
+
+#mir-box a {
+  color: cornflowerblue;
+  font-weight: bold;
+  text-shadow: none;
+}
+
+#store-header {
+  background-color: lightskyblue;
+  border: solid white 5px;
+  border-radius: 5px;
+  font-family: MinionProBold;
+  font-size: 30px;
+  height: 50px;
+  margin-bottom: 125px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 425px;
+}
+
+#store-box {
+  background-color: white;
+  border-radius: 5px;
+  font-family: MinionProMedium;
+  font-size: 20px;
+  height: 90px;
+  padding-top: 10px;
+  text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+  width: 425px;
+}
+
+#store-box a {
+  color: cornflowerblue;
+  font-weight: bold;
+  text-shadow: none;
+}
+
+#instagram-header {
+  background-color: lightskyblue;
+  border: solid white 5px;
+  border-radius: 5px;
+  font-family: MinionProBold;
+  font-size: 30px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  width: 425px;
+}
+
+#tiktok-header {
+  background-color: lightskyblue;
+  border: solid white 5px;
+  border-radius: 5px;
+  font-family: MinionProBold;
+  font-size: 30px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  width: 425px;
+}
+
+#twitter-header {
+  background-color: lightskyblue;
+  border: solid white 5px;
+  border-radius: 5px;
+  font-family: MinionProBold;
+  font-size: 30px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  width: 425px;
+}
+
+#patreon-header {
+  background-color: lightskyblue;
+  border: solid white 5px;
+  border-radius: 5px;
+  font-family: MinionProBold;
+  font-size: 30px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 95px;
+  width: 425px;
+}
+
+#patreon-box {
+  background-color: white;
+  border-radius: 5px;
+  font-family: MinionProMedium;
+  font-size: 20px;
+  height: 60px;
+  padding-top: 10px;
+  text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+  width: 425px;
+}
+
+#patreon-box a {
+  color: cornflowerblue;
+  font-weight: bold;
+  text-shadow: none;
+}
+
+#youtube-header {
+  background-color: lightskyblue;
+  border: solid white 5px;
+  border-radius: 5px;
+  font-family: MinionProBold;
+  font-size: 30px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 425px;
+}
