@@ -64,9 +64,7 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
 
-.temp {
   text-align: center;
 }
 
@@ -75,25 +73,19 @@ html {
   text-decoration: none;
 }
 
-#box-container {
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 50px;
-  width: 435px;
+.temp a:hover {
+  background-color: #f1cc23;
+  transition: all 0.35s linear;
 }
 
-#maria-header {
-  background-color: lightskyblue;
-  border: solid white 5px;
-  border-radius: 5px;
-  font-family: MinionProBold;
-  font-size: 30px;
-  height: 50px;
-  margin-bottom: 125px;
+#box-container {
   margin-left: auto;
   margin-right: auto;
-  width: 425px;
+  padding: 3vh;
+}
+
+#box-container a:hover {
+  color: white;
 }
 
 #div-link {
@@ -104,9 +96,23 @@ html {
   text-shadow: 0.5px 0.5px 1px rgb(255, 255, 255);
 }
 
+#one {
+  border: 5px solid white;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 425px;
+}
+
+#maria-header {
+  background-color: lightskyblue;
+  font-family: MinionProBold;
+  font-size: 30px;
+  width: 425px;
+}
+
 #maria-box {
 background-color: white;
-border-radius: 5px;
 font-family: MinionProMedium;
 font-size: 20px;
 height: 90px;
@@ -121,16 +127,18 @@ width: 425px;
   text-shadow: none;
 }
 
-#ale-header {
-  background-color: lightskyblue;
-  border: solid white 5px;
-  border-radius: 5px;
-  font-family: MinionProBold;
-  font-size: 30px;
-  height: 50px;
-  margin-bottom: 125px;
+#two {
+  border: 5px solid white;
+  margin-bottom: 25px;
   margin-left: auto;
   margin-right: auto;
+  width: 425px;
+}
+
+#ale-header {
+  background-color: lightskyblue;
+  font-family: MinionProBold;
+  font-size: 30px;
   width: 425px;
 }
 
@@ -151,22 +159,24 @@ width: 425px;
   text-shadow: none;
 }
 
-#mir-header {
-  background-color: lightskyblue;
-  border: solid white 5px;
-  border-radius: 5px;
-  font-family: MinionProBold;
-  font-size: 30px;
-  height: 50px;
-  margin-bottom: 95px;
+#three {
+  border: 5px solid white;
+  margin-bottom: 25px;
   margin-left: auto;
   margin-right: auto;
   width: 425px;
 }
 
+#mir-header {
+  background-color: lightskyblue;
+  font-family: MinionProBold;
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #mir-box {
   background-color: white;
-  border-radius: 5px;
   font-family: MinionProMedium;
   font-size: 20px;
   height: 60px;
@@ -181,22 +191,23 @@ width: 425px;
   text-shadow: none;
 }
 
-#store-header {
-  background-color: lightskyblue;
-  border: solid white 5px;
-  border-radius: 5px;
-  font-family: MinionProBold;
-  font-size: 30px;
-  height: 50px;
-  margin-bottom: 125px;
+#four {
+  border: 5px solid white;
+  margin-bottom: 25px;
   margin-left: auto;
   margin-right: auto;
   width: 425px;
 }
 
+#store-header {
+  background-color: lightskyblue;
+  font-family: MinionProBold;
+  font-size: 30px;
+  width: 425px;
+}
+
 #store-box {
   background-color: white;
-  border-radius: 5px;
   font-family: MinionProMedium;
   font-size: 20px;
   height: 90px;
@@ -211,61 +222,68 @@ width: 425px;
   text-shadow: none;
 }
 
-#instagram-header {
-  background-color: lightskyblue;
-  border: solid white 5px;
-  border-radius: 5px;
-  font-family: MinionProBold;
-  font-size: 30px;
-  height: 50px;
+#five {
+  border: 5px solid white;
+  margin-bottom: 25px;
   margin-left: auto;
   margin-right: auto;
+  width: 425px;
+}
+
+#instagram-header {
+  background-color: lightskyblue;
+  font-family: MinionProBold;
+  font-size: 30px;
+  width: 425px;
+}
+
+#six {
+  border: 5px solid white;
   margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
   width: 425px;
 }
 
 #tiktok-header {
   background-color: lightskyblue;
-  border: solid white 5px;
-  border-radius: 5px;
   font-family: MinionProBold;
   font-size: 30px;
-  height: 50px;
+  width: 425px;
+}
+
+#seven {
+  border: 5px solid white;
+  margin-bottom: 25px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 25px;
   width: 425px;
 }
 
 #twitter-header {
   background-color: lightskyblue;
-  border: solid white 5px;
-  border-radius: 5px;
   font-family: MinionProBold;
   font-size: 30px;
-  height: 50px;
+  width: 425px;
+}
+
+#eight {
+  border: 5px solid white;
+  margin-bottom: 25px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 25px;
   width: 425px;
 }
 
 #patreon-header {
   background-color: lightskyblue;
-  border: solid white 5px;
-  border-radius: 5px;
   font-family: MinionProBold;
   font-size: 30px;
-  height: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 95px;
   width: 425px;
 }
 
 #patreon-box {
   background-color: white;
-  border-radius: 5px;
   font-family: MinionProMedium;
   font-size: 20px;
   height: 60px;
@@ -280,13 +298,18 @@ width: 425px;
   text-shadow: none;
 }
 
+#nine {
+  border: 5px solid white;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 425px;
+}
+
 #youtube-header {
   background-color: lightskyblue;
-  border: solid white 5px;
-  border-radius: 5px;
   font-family: MinionProBold;
   font-size: 30px;
-  height: 50px;
   margin-left: auto;
   margin-right: auto;
   width: 425px;
