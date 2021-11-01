@@ -79,25 +79,56 @@ html {
 }
 /* #endregion base */
 
+#box-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3vh;
+}
+
+#box-container a:hover {
+  color: white;
+}
+
+#div-link {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  text-shadow: 0.5px 0.5px 1px rgb(255, 255, 255);
+}
+
+#maria-box a {
+  color: cornflowerblue;
+  font-weight: bold;
+  text-shadow: none;
+}
+
+#ale-box a {
+  color: cornflowerblue;
+  font-weight: bold;
+  text-shadow: none;
+}
+
+#mir-box a {
+  color: cornflowerblue;
+  font-weight: bold;
+  text-shadow: none;
+}
+
+#store-box a {
+  color: cornflowerblue;
+  font-weight: bold;
+  text-shadow: none;
+}
+
+#patreon-box a {
+  color: cornflowerblue;
+  font-weight: bold;
+  text-shadow: none;
+}
+
 @media screen and (min-width: 999px) {
-  #box-container {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 3vh;
-  }
-  
-  #box-container a:hover {
-    color: white;
-  }
-  
-  #div-link {
-    display: block;
-    height: 100%;
-    width: 100%;
-    text-decoration: none;
-    text-shadow: 0.5px 0.5px 1px rgb(255, 255, 255);
-  }
-  
+
   #one {
     border: 5px solid white;
     margin-bottom: 25px;
@@ -121,12 +152,6 @@ html {
   padding-top: 10px;
   text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
   width: 425px;
-  }
-  
-  #maria-box a {
-    color: cornflowerblue;
-    font-weight: bold;
-    text-shadow: none;
   }
   
   #two {
@@ -155,12 +180,6 @@ html {
     width: 425px;
   }
   
-  #ale-box a {
-    color: cornflowerblue;
-    font-weight: bold;
-    text-shadow: none;
-  }
-  
   #three {
     border: 5px solid white;
     margin-bottom: 25px;
@@ -173,8 +192,6 @@ html {
     background-color: lightskyblue;
     font-family: MinionProBold;
     font-size: 30px;
-    margin-left: auto;
-    margin-right: auto;
   }
   
   #mir-box {
@@ -185,12 +202,6 @@ html {
     padding-top: 10px;
     text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
     width: 425px;
-  }
-  
-  #mir-box a {
-    color: cornflowerblue;
-    font-weight: bold;
-    text-shadow: none;
   }
   
   #four {
@@ -216,12 +227,6 @@ html {
     padding-top: 10px;
     text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
     width: 425px;
-  }
-  
-  #store-box a {
-    color: cornflowerblue;
-    font-weight: bold;
-    text-shadow: none;
   }
   
   #five {
@@ -294,12 +299,6 @@ html {
     width: 425px;
   }
   
-  #patreon-box a {
-    color: cornflowerblue;
-    font-weight: bold;
-    text-shadow: none;
-  }
-  
   #nine {
     border: 5px solid white;
     margin-bottom: 25px;
@@ -318,25 +317,7 @@ html {
   } 
 }
 
-@media screen and (max-width: 998px) {
-  #box-container {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 3vh;
-  }
-  
-  #box-container a:hover {
-    color: white;
-  }
-  
-  #div-link {
-    display: block;
-    height: 100%;
-    width: 100%;
-    text-decoration: none;
-    text-shadow: 0.5px 0.5px 1px rgb(255, 255, 255);
-  }
-  
+@media screen and (max-width: 998px) {  
   #one {
     border: 5px solid white;
     margin-bottom: 25px;
@@ -360,12 +341,6 @@ html {
   padding-top: 10px;
   text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
   width: 600px;
-  }
-  
-  #maria-box a {
-    color: cornflowerblue;
-    font-weight: bold;
-    text-shadow: none;
   }
   
   #two {
@@ -394,42 +369,29 @@ html {
     width: 600px;
   }
   
-  #ale-box a {
-    color: cornflowerblue;
-    font-weight: bold;
-    text-shadow: none;
-  }
-  
   #three {
     border: 5px solid white;
     margin-bottom: 25px;
     margin-left: auto;
     margin-right: auto;
-    width: 425px;
+    width: 600px;
   }
   
   #mir-header {
     background-color: lightskyblue;
     font-family: MinionProBold;
-    font-size: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 3em;
+    width: 600px;
   }
   
   #mir-box {
     background-color: white;
     font-family: MinionProMedium;
-    font-size: 20px;
-    height: 60px;
+    font-size: 0.6em;
+    height: 3em;
     padding-top: 10px;
     text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
-    width: 425px;
-  }
-  
-  #mir-box a {
-    color: cornflowerblue;
-    font-weight: bold;
-    text-shadow: none;
+    width: 600px;
   }
   
   #four {
@@ -437,30 +399,24 @@ html {
     margin-bottom: 25px;
     margin-left: auto;
     margin-right: auto;
-    width: 425px;
+    width: 600px;
   }
   
   #store-header {
     background-color: lightskyblue;
     font-family: MinionProBold;
-    font-size: 30px;
-    width: 425px;
+    font-size: 3em;
+    width: 600px;
   }
   
   #store-box {
     background-color: white;
     font-family: MinionProMedium;
-    font-size: 20px;
-    height: 90px;
+    font-size: 0.6em;
+    height: 4em;
     padding-top: 10px;
     text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
-    width: 425px;
-  }
-  
-  #store-box a {
-    color: cornflowerblue;
-    font-weight: bold;
-    text-shadow: none;
+    width: 600px;
   }
   
   #five {
@@ -468,14 +424,14 @@ html {
     margin-bottom: 25px;
     margin-left: auto;
     margin-right: auto;
-    width: 425px;
+    width: 600px;
   }
   
   #instagram-header {
     background-color: lightskyblue;
     font-family: MinionProBold;
-    font-size: 30px;
-    width: 425px;
+    font-size: 3em;
+    width: 600px;
   }
   
   #six {
@@ -483,14 +439,14 @@ html {
     margin-bottom: 25px;
     margin-left: auto;
     margin-right: auto;
-    width: 425px;
+    width: 600px;
   }
   
   #tiktok-header {
     background-color: lightskyblue;
     font-family: MinionProBold;
-    font-size: 30px;
-    width: 425px;
+    font-size: 3em;
+    width: 600px;
   }
   
   #seven {
@@ -498,14 +454,14 @@ html {
     margin-bottom: 25px;
     margin-left: auto;
     margin-right: auto;
-    width: 425px;
+    width: 600px;
   }
   
   #twitter-header {
     background-color: lightskyblue;
     font-family: MinionProBold;
-    font-size: 30px;
-    width: 425px;
+    font-size: 3em;
+    width: 600px;
   }
   
   #eight {
@@ -513,30 +469,24 @@ html {
     margin-bottom: 25px;
     margin-left: auto;
     margin-right: auto;
-    width: 425px;
+    width: 600px;
   }
   
   #patreon-header {
     background-color: lightskyblue;
     font-family: MinionProBold;
-    font-size: 30px;
-    width: 425px;
+    font-size: 3em;
+    width: 600px;
   }
   
   #patreon-box {
     background-color: white;
     font-family: MinionProMedium;
-    font-size: 20px;
-    height: 60px;
+    font-size: 0.6em;
+    height: 3em;
     padding-top: 10px;
     text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
-    width: 425px;
-  }
-  
-  #patreon-box a {
-    color: cornflowerblue;
-    font-weight: bold;
-    text-shadow: none;
+    width: 600px;
   }
   
   #nine {
@@ -544,15 +494,15 @@ html {
     margin-bottom: 25px;
     margin-left: auto;
     margin-right: auto;
-    width: 425px;
+    width: 600px;
   }
   
   #youtube-header {
     background-color: lightskyblue;
     font-family: MinionProBold;
-    font-size: 30px;
+    font-size: 3em;
     margin-left: auto;
     margin-right: auto;
-    width: 425px;
+    width: 600px;
   } 
 }
