@@ -82,7 +82,7 @@ html {
 #box-container {
   margin-left: auto;
   margin-right: auto;
-  padding: 3vh;
+  padding: 2vh;
 }
 
 #box-container a:hover {
@@ -128,6 +128,12 @@ html {
 }
 
 @media screen and (min-width: 999px) {
+
+  #header {
+    height: 128;
+    width: 128;
+    padding-top: 3vh;
+  }
 
   #one {
     border: 5px solid white;
@@ -317,7 +323,13 @@ html {
   } 
 }
 
-@media screen and (max-width: 998px) {  
+@media screen and (max-width: 998px) {
+  #header {
+    height: 228px;
+    width: 228px;
+    padding-top: 2vh;
+  }
+
   #one {
     border: 5px solid white;
     margin-bottom: 25px;
