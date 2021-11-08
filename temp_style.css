@@ -153,7 +153,7 @@ html {
   #maria-box {
   background-color: white;
   font-family: MinionProMedium;
-  font-size: 20px;
+  font-size: 19px;
   height: 90px;
   padding-top: 10px;
   text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
@@ -177,9 +177,8 @@ html {
   
   #ale-box {
     background-color: white;
-    border-radius: 5px;
     font-family: MinionProMedium;
-    font-size: 20px;
+    font-size: 19px;
     height: 90px;
     padding-top: 10px;
     text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
@@ -203,7 +202,7 @@ html {
   #mir-box {
     background-color: white;
     font-family: MinionProMedium;
-    font-size: 20px;
+    font-size: 19px;
     height: 60px;
     padding-top: 10px;
     text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
@@ -228,7 +227,7 @@ html {
   #store-box {
     background-color: white;
     font-family: MinionProMedium;
-    font-size: 20px;
+    font-size: 19px;
     height: 90px;
     padding-top: 10px;
     text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
@@ -298,7 +297,7 @@ html {
   #patreon-box {
     background-color: white;
     font-family: MinionProMedium;
-    font-size: 20px;
+    font-size: 19px;
     height: 60px;
     padding-top: 10px;
     text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
