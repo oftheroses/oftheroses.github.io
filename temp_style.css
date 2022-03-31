@@ -97,6 +97,12 @@ html {
   text-shadow: 0.5px 0.5px 1px rgb(255, 255, 255);
 }
 
+#discord-box a {
+  color: cornflowerblue;
+  font-weight: bold;
+  text-shadow: none;
+}
+
 #maria-box a {
   color: cornflowerblue;
   font-weight: bold;
@@ -133,6 +139,31 @@ html {
     height: 128;
     width: 128;
     padding-top: 3vh;
+  }
+
+  #zero {
+    border: 5px solid white;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 425px;
+  }
+
+  #discord-header {
+    background-color: lightskyblue;
+    font-family: MinionProBold;
+    font-size: 30px;
+    width: 425px;
+  }
+
+  #discord-box {
+    background-color: white;
+    font-family: MinionProMedium;
+    font-size: 0.625em;
+    height: 60px;
+    padding-top: 10px;
+    text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+    width: 425px;
   }
 
   #one {
@@ -327,6 +358,31 @@ html {
     height: 228px;
     width: 228px;
     padding-top: 2vh;
+  }
+
+  #zero {
+    border: 5px solid white;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+  }
+
+  #discord-header {
+    background-color: lightskyblue;
+    font-family: MinionProBold;
+    font-size: 3em;
+    width: 600px;
+  }
+
+  #discord-box {
+    background-color: white;
+    font-family: MinionProMedium;
+    font-size: 0.6em;
+    height: 4em;
+    padding-top: 10px;
+    text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+    width: 600px;
   }
 
   #one {
