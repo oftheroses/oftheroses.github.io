@@ -1,0 +1,491 @@
+/*#region base*/
+/*#region colors*/
+:root {
+  --scrollbar-background: #8C6586;
+  --scollbar-track: #F2B077;
+
+  --text-background: white;
+
+  --splash-fade: white;
+  --splash-about: white;
+  --splash-gradient-one: #D99379;
+  --splash-gradient-two: #8C6586;
+  --splash-gradient-three: #F2B077;
+
+  --body-text: black;
+  --body-shadow: rgba(0, 0, 0, 255);
+
+  --header-gradient-one: #D99379;
+  --header-gradient-two: #8C6586;
+  --header-gradient-three: #F2B077;
+
+  --header-border-bottom: #022859;
+  --header-text-shadow: rgba(0, 0, 0, 0.25);
+  --header-current-link: white;
+  --header-link-divider: white;
+
+  --header-link-hover: white;
+  --header-other-links: #ffffff;
+  --header-link-bg: rgba(2, 40, 89, 0.5);
+}
+/*#endregion colors*/
+/*#region scrollbar*/
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #59394B;
+  border-left: 2px solid #59394B;
+}
+
+::-webkit-scrollbar-track {
+  background: #D99379;
+  border-left: 2px solid #59394B;
+}
+/*#endregion scrollbar*/
+/*#region fonts*/
+@font-face {
+  font-family: 'MinionProBold';
+  src: url('/Assets/Fonts/MinionProBold.otf');
+}
+
+@font-face {
+  font-family: 'MinionProBoldItalic';
+  src: url('/Assets/Fonts/MinionProBoldItalic.otf');
+}
+
+@font-face {
+  font-family: 'MinionProMedium';
+  src: url('/Assets/Fonts/MinionProMedium.otf');
+}
+
+@font-face {
+  font-family: 'MinionProMediumItalic';
+  src: url('/Assets/Fonts/MinionProMediumItalic.otf');
+}
+
+/*endregion fonts*/
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+::-moz-selection {
+  background: rgba(140, 101, 134, 0.5);
+  color: white;
+  text-shadow: 0.25px 0.25px 0px rgba(255, 255, 255, 0.5);
+}
+
+::selection {
+  background: rgba(140, 101, 134, 0.5);
+  color: white;
+  text-shadow: 0.25px 0.25px 0px rgba(255, 255, 255, 0.5);
+}
+
+input {
+  background-color: rgba(140, 101, 134, 0.5);
+  border: none;
+  font-family: MinionProMedium;
+  font-size: 20px;
+  padding: 10px;
+}
+
+input:focus {
+  border: none;
+  outline: none;
+}
+
+textarea {
+  background-color: rgba(140, 101, 134, 0.5);
+  border: none;
+  font-family: MinionProMedium;
+  font-size: 20px;
+  padding: 10px;
+}
+
+textarea:focus {
+  border: none;
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  color: var(--body-text);
+  font-size: 20px;
+  font-family: MinionProMediumItalic;
+}
+
+::-moz-placeholder {
+  color: var(--body-text);
+  font-size: 20px;
+  font-family: MinionProMediumItalic;
+}
+
+:-ms-input-placeholder {
+  color: var(--body-text);
+  font-size: 20px;
+  font-family: MinionProMediumItalic;
+}
+
+:-moz-placeholder {
+  color: var(--body-text);
+  font-size: 20px;
+  font-family: MinionProMediumItalic;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 91% 0%
+  }
+
+  50% {
+    background-position: 10% 100%
+  }
+
+  100% {
+    background-position: 91% 0%
+  }
+}
+
+@-moz-keyframes gradient {
+  0% {
+    background-position: 91% 0%
+  }
+
+  50% {
+    background-position: 10% 100%
+  }
+
+  100% {
+    background-position: 91% 0%
+  }
+}
+
+@-o-keyframes gradient {
+  0% {
+    background-position: 91% 0%
+  }
+
+  50% {
+    background-position: 10% 100%
+  }
+
+  100% {
+    background-position: 91% 0%
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 91% 0%
+  }
+
+  50% {
+    background-position: 10% 100%
+  }
+
+  100% {
+    background-position: 91% 0%
+  }
+}
+
+/*#endregion base2*/
+/*#endregion base*/
+
+/*#region queries*/
+/* smol
+@media only screen and (max-width: 960px) {
+
+}*/
+
+/* big */
+@media only screen and (min-width: 961px) {
+  #splash-box {
+    background-color: white;
+    color: black;
+    font-family: MinionProMedium;
+    font-size: 30px;
+    padding: 15px;
+    text-align: center;
+    text-shadow: 0.25px 0.25px 0px var(--body-shadow);
+    z-index: 1;
+  }
+
+  #header {
+    background: linear-gradient(90deg, var(--header-gradient-one), var(--header-gradient-two), var(--header-gradient-three));
+    background-size: 400% 400%;
+
+    -webkit-animation: gradient 15s ease infinite;
+    -moz-animation: gradient 15s ease infinite;
+    -o-animation: gradient 15s ease infinite;
+    animation: gradient 15s ease infinite;
+    
+    align-items: center;
+    color: white;
+    display: flex;
+    font-size: 35px;
+    height: max-content;
+    justify-content: center;
+    position: sticky;
+    text-align: center;
+    text-shadow: var(--header-text-shadow) 0px 2px 2px;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  #about-image img {
+    height: 893px;
+  }
+
+  #about-text {
+    background-color: var(--text-background);
+    font-family: MinionProMedium;
+    font-size: 25px;
+    height: 100%;
+    text-shadow: 0.25px 0.25px 0px rgba(0, 0, 0, 0.5);
+    padding: 25px;
+    width: max-content;
+  }
+
+  #social-links {
+    align-items: center;
+    display: flex;
+    font-family: MinionProBold;
+    font-size: 25px;
+    text-align: left;
+    width: max-content;
+  }
+
+  #social-links img {
+    height: 30px;
+    vertical-align: middle;
+  }
+
+  #social-links a {
+    color: #8C6586;
+    text-shadow: 0.25px 0.25px 0px #8C6586;
+  }
+
+  #social-links a:hover{
+    color: #8c658680;
+    transition: 0.5s;    
+  }
+}
+/*#endregion queries*/
+#hyperlink-tag {
+  background-color: rgba(140, 101, 134, 0.5);
+  color: white;
+  text-shadow: 0.25px 0.25px 0px white;
+}
+
+#hyperlink-tag:hover {
+  background-color: #8C6586;
+  transition: 0.5s;
+}
+
+#header-tag {
+  font-family: MinionProBold;
+  font-size: 30px;
+}
+
+#question-tag {
+  font-family: MinionProBold;
+  font-size: 25px;
+}
+
+#div-divider {
+  border: 0.5px solid var(--scrollbar-background);
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 50vw;
+}
+/*#region splash*/
+#splash {
+  align-items: center;
+  background-image: url(/Assets/Images/Space.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#splash a:hover {
+  color: var(--body-text);
+  transition: 0.5s;
+}
+
+.fade-bg {
+  background: linear-gradient(90deg, var(--splash-gradient-one), var(--splash-gradient-two), var(--splash-gradient-three));
+  background-size: 400% 400%;
+
+  -webkit-animation: gradient 15s ease infinite;
+  -moz-animation: gradient 15s ease infinite;
+  -o-animation: gradient 15s ease infinite;
+  animation: gradient 15s ease infinite;
+
+  height: 100vh;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+}
+
+#splash-box a {
+  color: #ffcc31;
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;
+}
+
+/*#endregion splash*/
+/*#region header*/
+
+.link-divider {
+  color: var(--header-link-divider);
+  font-family: MinionProBold;
+}
+
+#current-link {
+  background-color: #59394b;
+  font-family: MinionProBoldItalic;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#current-link:hover {
+  cursor: default;
+}
+
+#inactive-link {
+  background-color: var(--header-gradient-three);
+  font-family: MinionProBold;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#inactive-link:hover {
+  background-color: var(--header-gradient-two);
+  cursor: pointer;
+  transition: 0.5s;
+}
+/*#endregion header*/
+/*#region site*/
+#site {
+  background: linear-gradient(90deg, rgba(217, 146, 120, 0.5), rgba(140, 101, 134, 0.5), rgba(242, 176, 119, 0.5));
+  background-size: 400% 400%;
+
+  -webkit-animation: gradient 15s ease infinite;
+  -moz-animation: gradient 15s ease infinite;
+  -o-animation: gradient 15s ease infinite;
+  animation: gradient 15s ease infinite;
+
+  height: max-content;
+  width: 100%;
+  z-index: 0;
+}
+
+#site-bg-overlay {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+
+/*#endregion site*/
+/*#region about-contact*/
+#about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#contact {
+  align-items: center;
+  display: flex;
+  font-size: 25px;
+  gap: 50px;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+}
+
+#contact-text {
+  background-color: var(--text-background);
+  padding: 25px;
+  text-shadow: 0.25px 0.25px 0px rgba(0, 0, 0, 0.5);
+}
+
+#fs-frm-inputs {
+  border: none;
+}
+
+#contact-first-row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-bottom: 10px;
+  padding-top: 15px;
+}
+
+#contact-second-row {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+
+#message {
+  resize: none;
+}
+
+#send-box {
+  width: max-content;
+}
+
+#send {
+  background-color: #8C6586;
+  color: white;
+  font-family: MinionProBold;
+  font-size: 25px;
+}
+
+#send:hover {
+  background-color: #59394B;
+  cursor: pointer;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  transition: 0.5s;
+}
+/*#endregion about-contact*/
+/*#region faq/links*/
+#faq-links {
+  margin-top: 1000px;
+  margin: auto;
+  width: max-content;
+}
+
+#faq {
+  color: var(--body-text);
+  font-family: MinionProMedium;
+  font-size: 20px;
+  text-align: left;
+  text-shadow: 0.25px 0.25px 0px var(--body-shadow);
+  padding: 15px;
+}
+/*#endregion faq/links*/
+#footer {
+  font-family: MinionProMedium;
+  font-size: 20px;
+  text-align: center;
+}

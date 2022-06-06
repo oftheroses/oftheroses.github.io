@@ -1,0 +1,542 @@
+/*#region base*/
+
+/*#region colors*/
+:root {
+  --splash-fade: white;
+  --splash-about: white;
+  --splash-gradient-one: black;
+  --splash-gradient-two: white;
+  --splash-gradient-three: black;
+
+  --body-text: #323232;
+  --body-shadow: rgba(0, 0, 0, 255);
+
+  --header-gradient-one: #022859;
+  --header-gradient-two: #7283A6;
+  --header-gradient-three: #022859;
+  --header-border-bottom: #022859;
+  --header-text-shadow: rgba(0, 0, 0, 0.25);
+  --header-current-link: white;
+  --header-link-divider: white;
+
+  --header-link-hover: white;
+  --header-other-links: #ffffff;
+  --header-link-one-bg: rgba(2, 40, 89, 0.5);
+  --header-link-two-bg: rgba(2, 40, 89, 0.5);
+  --header-link-three-bg: rgba(2, 40, 89, 0.5);
+  --header-link-four-bg: rgba(2, 40, 89, 0.5);
+  --header-link-five-bg: rgba(2, 40, 89, 0.5);
+
+  --navigation-background-color: rgba(255, 255, 255, 0.2);
+
+  --sidebar-text-container: rgba(255, 255, 255, 0.825);
+  --search-bg: orange;
+}
+/*#endregion colors*/
+/*#region scrollbar*/
+* {
+  scrollbar-width: auto;
+  scrollbar-color: var(--header-gradient-one) #7283A6;
+}
+
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #7283A6;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #022859;
+  border: 3px double #142240;
+}
+/*#endregion scrollbar*/
+/*#region fonts*/
+@font-face {
+  font-family: 'MinionProBold';
+  src: url('/Assets/Fonts/MinionProBold.otf');
+}
+
+@font-face {
+  font-family: 'MinionProBoldItalic';
+  src: url('/Assets/Fonts/MinionProBoldItalic.otf');
+}
+
+@font-face {
+  font-family: 'MinionProMedium';
+  src: url('/Assets/Fonts/MinionProMedium.otf');
+}
+
+@font-face {
+  font-family: 'MinionProMediumItalic';
+  src: url('/Assets/Fonts/MinionProMediumItalic.otf');
+}
+
+/*endregion fonts*/
+a {
+  text-decoration: none;
+}
+
+a :visited {
+  text-decoration: none;
+}
+
+::-moz-selection {
+  color: #FFFFFF;
+  background: #323232;
+}
+
+::selection {
+  color: #FFFFFF;
+  background: #323232;
+}
+
+input {
+  border: 2px solid rgba(183, 113, 82, 0.5);
+  font-family: MinionProMedium;
+  font-size: 15px;
+}
+
+input:focus {
+  outline: 2px solid #b77152;
+}
+
+textarea {
+  border: 2px solid rgba(183, 113, 82, 0.5);
+  font-family: MinionProMedium;
+  font-size: 15px;
+}
+
+textarea:focus {
+  outline: 2px solid #b77152;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-size: 15px;
+  font-family: MinionProMediumItalic;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  font-size: 15px;
+  font-family: MinionProMediumItalic;
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  font-size: 15px;
+  font-family: MinionProMediumItalic;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  font-size: 15px;
+  font-family: MinionProMediumItalic;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 91% 0%
+  }
+
+  50% {
+    background-position: 10% 100%
+  }
+
+  100% {
+    background-position: 91% 0%
+  }
+}
+
+@-moz-keyframes gradient {
+  0% {
+    background-position: 91% 0%
+  }
+
+  50% {
+    background-position: 10% 100%
+  }
+
+  100% {
+    background-position: 91% 0%
+  }
+}
+
+@-o-keyframes gradient {
+  0% {
+    background-position: 91% 0%
+  }
+
+  50% {
+    background-position: 10% 100%
+  }
+
+  100% {
+    background-position: 91% 0%
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 91% 0%
+  }
+
+  50% {
+    background-position: 10% 100%
+  }
+
+  100% {
+    background-position: 91% 0%
+  }
+}
+
+/*#endregion base2*/
+/*#endregion base*/
+/*#region splash*/
+@media only screen and (max-width: 960px) {
+  /* styles for browsers larger than 960px; */
+
+}
+
+@media only screen and (min-width: 961px) {
+  /* styles for browsers larger than 1440px; */
+
+}
+
+#fade-bg {
+  background-color: var(--splash-fade);
+  height: 100vh;
+  opacity: 0;
+  width: 100%;
+}
+
+#splash {
+  background: linear-gradient(45deg, var(--splash-gradient-one), var(--splash-gradient-two), var(--splash-gradient-three));
+  background-size: 400% 400%;
+
+  -webkit-animation: gradient 8s ease infinite;
+  -moz-animation: gradient 8s ease infinite;
+  -o-animation: gradient 8s ease infinite;
+  animation: gradient 8s ease infinite;
+
+  height: 100vh;
+  width: 100%;
+}
+
+#splash-bg {
+  background-image: url(/Assets/Images/Space.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+#splash-box {
+  background-color: var(--splash-about);
+  color: var(--body-text);
+  font-family: MinionProMedium;
+  font-size: 2vw;
+  padding: 15px;
+  position: absolute;
+  text-align: center;
+  text-shadow: 0.25px 0.25px 0px var(--body-shadow);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content;
+}
+
+#splash-box a {
+  color: var(--header-gradient-two);
+}
+
+/*#endregion splash*/
+/*#region navigation*/
+#header {
+  background: linear-gradient(45deg, var(--header-gradient-one), var(--header-gradient-two), var(--header-gradient-three));
+  background-size: 400% 400%;
+
+  -webkit-animation: gradient 10s ease infinite;
+  -moz-animation: gradient 10s ease infinite;
+  -o-animation: gradient 10s ease infinite;
+  animation: gradient 10s ease infinite;
+
+  border-bottom: 5px solid var(--header-border-bottom);
+  font-size: 35px;
+  height: max-content;
+  text-align: center;
+  text-shadow: var(--header-text-shadow) 0px 2px 2px;
+  width: 100%;
+}
+
+#header a {
+  color: var(--header-other-links);
+}
+
+#header a:hover {
+  background-color: var(--header-link-hover);
+  color: var(--body-text);
+  transition: 0.5s;
+}
+
+#navigation {
+  background-color: var(--navigation-background-color);
+  border-right: 5px solid var(--header-border-bottom);
+  height: 100%;
+  position: absolute;
+  width: 25%;
+}
+
+#navigation-text {
+  color: var(--header-current-link);
+  font-family: MinionProBoldItalic;
+  font-size: 35px;
+  overflow: hidden;
+  padding-top: 5px;
+  text-align: center;
+  text-shadow: var(--header-text-shadow);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#links {
+  height: max-content;
+  margin-left: 25%;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  width: 75%;
+}
+
+#links-container {
+  margin: auto;
+  width: fit-content;
+}
+
+#link-divider {
+  color: var(--header-link-divider);
+  display: inline-block;
+  font-family: MinionProBold;
+  height: max-content;
+  width: max-content;
+}
+
+#link-one {
+  background-color: var(--header-link-one-bg);
+  display: inline-block;
+  font-family: MinionProBold;
+  height: max-content;
+  width: max-content;
+}
+
+#link-two {
+  background-color: var(--header-link-two-bg);
+  display: inline-block;
+  font-family: MinionProBold;
+  height: max-content;
+  width: max-content;
+}
+
+#link-three {
+  background-color: var(--header-link-three-bg);
+  display: inline-block;
+  font-family: MinionProBold;
+  height: max-content;
+  width: max-content;
+}
+
+#link-four {
+  background-color: var(--header-link-four-bg);
+  display: inline-block;
+  font-family: MinionProBold;
+  height: max-content;
+  width: max-content;
+}
+
+#link-five {
+  background-color: var(--header-link-five-bg);
+  display: inline-block;
+  font-family: MinionProBold;
+  height: max-content;
+  width: max-content;
+}
+
+/*#endregion navigation*/
+/*#region site*/
+#site {
+  height: 100vh;
+  width: 100%;
+}
+
+#site-container {
+  background: linear-gradient(45deg, var(--header-gradient-one), var(--header-gradient-two), var(--header-gradient-three));
+  background-size: 400% 400%;
+
+  -webkit-animation: gradient 20s ease infinite;
+  -moz-animation: gradient 20s ease infinite;
+  -o-animation: gradient 20s ease infinite;
+  animation: gradient 20s ease infinite;
+
+  height: calc(100vh - 50px);
+  margin-left: 25%;
+  margin-top: 0px;
+  width: 75%;
+}
+
+#site-container-bg {
+  background-color: var(--navigation-background-color);
+  height: 100%;
+  width: 100%;
+}
+/*#endregion site*/
+/*#region sidebar*/
+#sidebar-container {
+  border-right: 5px solid var(--header-border-bottom);
+  display: block;
+  height: calc(100vh - 50px);
+  position: absolute;
+  width: 25%;
+}
+
+#sidebar-text-container {
+  background: var(--sidebar-text-container);
+  color: var(--body-text);
+  font-family: MinionProMedium;
+  font-size: 20px;
+  height: max-content;
+  left: 50%;
+  padding: 10px;
+  position: absolute;
+  transform: translate(-50%);
+  top: 10%;
+  text-shadow: 0.25px 0.25px 0px rgba(0, 0, 0, 0.5);
+  width: max-content;
+}
+
+#search-bar {
+  background-color: var(--search-bg);
+  color: var(--body-text);
+  font-size: 20px;
+  margin-top: 10px;
+  width: 75%;
+}
+
+#sidebar-image {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+#sidebar-image img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+/*#endregion sidebar*/
+/*#region about*/
+#about {
+  background-color: white;
+  -webkit-box-shadow: 2px 1px 2px 2px #b77152;
+  box-shadow: 2px 1px 2px 2px #b77152;
+  left: 50%;
+  padding: 25px;
+  position: relative;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content;
+}
+
+#about-text {
+  font-family: MinionProMedium;
+  font-size: 25px;
+  text-shadow: 0.25px 0.25px 0px rgba(0, 0, 0, 0.5);
+}
+/*#endregion about*/
+/*#region contact*/
+#contact {
+  background-color: white;
+  -webkit-box-shadow: 2px 1px 2px 2px #b77152;
+  box-shadow: 2px 1px 2px 2px #b77152;
+  left: 50%;
+  padding: 25px;
+  position: relative;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content;
+}
+
+#fs-frm-inputs {
+  border: none;
+}
+
+#contact-text {
+  font-family: MinionProBold;
+  font-size: 25px;
+  text-shadow: 0.25px 0.25px 0px rgba(0, 0, 0, 0.5);
+}
+
+#name-box {
+  height: max-content;
+  padding: 5px;
+  width: 500px;
+}
+
+#full-name {
+  width: 50%
+}
+
+#email-box {
+  height: max-content;
+  padding: 5px;
+  width: 500px;
+}
+
+#email-address {
+  width: 50%;
+}
+
+#subject-box {
+  height: max-content;
+  padding: 5px;
+  width: 500px;
+}
+
+#subject {
+  width: 50%;
+}
+
+#message-box {
+  height: 200px;
+  padding: 5px;
+  width: 500px;
+}
+
+#message {
+  height: 75%;
+  resize: none;
+  width: 95%;
+}
+
+#send-box {
+  padding: 5px;
+}
+
+#send {
+  background-color: rgba(183, 113, 82, 0.5);
+  font-family: MinionProBold;
+  font-size: 20px;
+  width: 15%;
+}
+
+#send:hover {
+  color: white;
+  cursor: pointer;
+  font-family: MinionProBoldItalic;
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;
+  transition: 0.3s;
+}
+
+/*#endregion contact*/
