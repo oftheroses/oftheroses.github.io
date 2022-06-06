@@ -202,85 +202,7 @@ textarea:focus {
 /*#endregion base*/
 
 /*#region queries*/
-/* smol
-@media only screen and (max-width: 960px) {
-
-}*/
-
-/* big */
-@media only screen and (min-width: 961px) {
-  #splash-box {
-    background-color: white;
-    color: black;
-    font-family: MinionProMedium;
-    font-size: 30px;
-    padding: 15px;
-    text-align: center;
-    text-shadow: 0.25px 0.25px 0px var(--body-shadow);
-    z-index: 1;
-  }
-
-  #header {
-    background: linear-gradient(90deg, var(--header-gradient-one), var(--header-gradient-two), var(--header-gradient-three));
-    background-size: 400% 400%;
-
-    -webkit-animation: gradient 15s ease infinite;
-    -moz-animation: gradient 15s ease infinite;
-    -o-animation: gradient 15s ease infinite;
-    animation: gradient 15s ease infinite;
-    
-    align-items: center;
-    color: white;
-    display: flex;
-    font-size: 35px;
-    height: max-content;
-    justify-content: center;
-    position: sticky;
-    text-align: center;
-    text-shadow: var(--header-text-shadow) 0px 2px 2px;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-  }
-
-  #about-image img {
-    height: 893px;
-  }
-
-  #about-text {
-    background-color: var(--text-background);
-    font-family: MinionProMedium;
-    font-size: 25px;
-    height: 100%;
-    text-shadow: 0.25px 0.25px 0px rgba(0, 0, 0, 0.5);
-    padding: 25px;
-    width: max-content;
-  }
-
-  #social-links {
-    align-items: center;
-    display: flex;
-    font-family: MinionProBold;
-    font-size: 25px;
-    text-align: left;
-    width: max-content;
-  }
-
-  #social-links img {
-    height: 30px;
-    vertical-align: middle;
-  }
-
-  #social-links a {
-    color: #8C6586;
-    text-shadow: 0.25px 0.25px 0px #8C6586;
-  }
-
-  #social-links a:hover{
-    color: #8c658680;
-    transition: 0.5s;    
-  }
-}
+/* 900 px? */
 /*#endregion queries*/
 #hyperlink-tag {
   background-color: rgba(140, 101, 134, 0.5);
@@ -291,6 +213,53 @@ textarea:focus {
 #hyperlink-tag:hover {
   background-color: #8C6586;
   transition: 0.5s;
+}
+
+#social-links {
+  align-items: center;
+  display: flex;
+  font-family: MinionProBold;
+  font-size: 25px;
+  text-align: left;
+  width: max-content;
+}
+
+#social-links img {
+  height: 30px;
+  vertical-align: middle;
+}
+
+#social-links a {
+  color: #8C6586;
+  text-shadow: 0.25px 0.25px 0px #8C6586;
+}
+
+#social-links a:hover{
+  color: #8c658680;
+  transition: 0.5s;    
+}
+
+#header {
+  background: linear-gradient(90deg, var(--header-gradient-one), var(--header-gradient-two), var(--header-gradient-three));
+  background-size: 400% 400%;
+
+  -webkit-animation: gradient 15s ease infinite;
+  -moz-animation: gradient 15s ease infinite;
+  -o-animation: gradient 15s ease infinite;
+  animation: gradient 15s ease infinite;
+  
+  align-items: center;
+  color: white;
+  display: flex;
+  font-size: 35px;
+  height: max-content;
+  justify-content: center;
+  position: sticky;
+  text-align: center;
+  text-shadow: var(--header-text-shadow) 0px 2px 2px;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 #header-tag {
@@ -327,6 +296,17 @@ textarea:focus {
 #splash a:hover {
   color: var(--body-text);
   transition: 0.5s;
+}
+
+#splash-box {
+  background-color: white;
+  color: black;
+  font-family: MinionProMedium;
+  font-size: 30px;
+  padding: 15px;
+  text-align: center;
+  text-shadow: 0.25px 0.25px 0px var(--body-shadow);
+  z-index: 1;
 }
 
 .fade-bg {
@@ -410,6 +390,20 @@ textarea:focus {
   flex-direction: row;
   justify-content: center;
   margin-top: 50px;
+}
+
+#about-image img {
+  height: 893px;
+}
+
+#about-text {
+  background-color: var(--text-background);
+  font-family: MinionProMedium;
+  font-size: 25px;
+  height: 100%;
+  text-shadow: 0.25px 0.25px 0px rgba(0, 0, 0, 0.5);
+  padding: 25px;
+  width: max-content;
 }
 
 #contact {
