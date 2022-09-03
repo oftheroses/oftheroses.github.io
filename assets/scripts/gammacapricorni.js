@@ -1,16 +1,3 @@
-function myFunction(imgs) {
-    // Get the expanded image
-    var expandImg = document.getElementById("expandedImg");
-    // Get the image text
-    var imgText = document.getElementById("imgtext");
-    // Use the same src in the expanded image as the image being clicked on from the grid
-    expandImg.src = imgs.src;
-    // Use the value of the alt attribute of the clickable image as text inside the expanded image
-    imgText.innerHTML = imgs.alt;
-    // Show the container element (hidden with CSS)
-    expandImg.parentElement.style.display = "block";
-}
-
 const checkpoint = 500;
 
 window.addEventListener("scroll", () => {
@@ -30,12 +17,11 @@ $(document).ready(function () {
 
             document.getElementById('about-button').className = "desktop-current-link";
             document.getElementById('faq-button').className = "desktop-inactive-link";
-            document.getElementById('gallery-button').className = "desktop-inactive-link";
 
             $("#site-container").load("about.html");
-            /*$([document.documentElement, document.body]).animate({
+            $([document.documentElement, document.body]).animate({
                 scrollTop: $("#site").offset().top
-            }, 10);*/
+            }, 10);
         }
     });
 
@@ -45,12 +31,11 @@ $(document).ready(function () {
 
             document.getElementById('about-button').className = "desktop-inactive-link";
             document.getElementById('faq-button').className = "desktop-current-link";
-            document.getElementById('gallery-button').className = "desktop-inactive-link";
 
             $("#site-container").load("faq.html");
-            /*$([document.documentElement, document.body]).animate({
+            $([document.documentElement, document.body]).animate({
                 scrollTop: $("#site").offset().top
-            }, 10);*/
+            }, 10);
         }
     });
 });
