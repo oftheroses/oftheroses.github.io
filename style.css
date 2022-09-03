@@ -39,22 +39,22 @@
 /*#region fonts*/
 @font-face {
   font-family: 'MinionProBold';
-  src: url('assets/fonts/MinionProBold.otf');
+  src: url('assets/MinionProBold.otf');
 }
 
 @font-face {
   font-family: 'MinionProBoldItalic';
-  src: url('assets/fonts/MinionProBoldItalic.otf');
+  src: url('assets/MinionProBoldItalic.otf');
 }
 
 @font-face {
   font-family: 'MinionProMedium';
-  src: url('assets/fonts/MinionProMedium.otf');
+  src: url('assets/MinionProMedium.otf');
 }
 
 @font-face {
   font-family: 'MinionProMediumItalic';
-  src: url('assets/fonts/MinionProMediumItalic.otf');
+  src: url('assets/MinionProMediumItalic.otf');
 }
 
 /*endregion fonts*/
