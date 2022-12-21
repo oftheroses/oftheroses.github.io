@@ -256,7 +256,6 @@ textarea:focus {
 /*#endregion base*/
 /*#region queries*/
 @media (min-width: 1080px) {
-
   .hyperlink-tag {
     background-color: var(--hyperlink-tag-background);
     color: white;
@@ -988,3 +987,61 @@ textarea:focus {
   width: 50%;
 }
 /*#endregion gallery/work*/
+
+#links-container {
+  align-items: center;
+  background: linear-gradient(45deg, rgba(242, 172, 172, 0.5),  rgba(255, 235, 188, 0.5), rgba(242, 172, 172, 0.5));
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+  -moz-animation: gradient 15s ease infinite;
+  -o-animation: gradient 15s ease infinite;
+  animation: gradient 15s ease infinite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  max-width: 100vw;
+}
+
+#links-background {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: max-content;
+  padding: 25px;
+  width: max-content;
+}
+
+.link-box-title {
+  font-family: MinionProMedium;
+  font-size: 20px;
+  margin-top: 15px;
+  text-shadow: 0.15px 0.15px 0.2px black, -0.15px -0.1px 0.2px black;
+}
+
+.link-box {
+background-color: #BF80A3;
+color: white;
+border-radius: 3px;
+box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.25);
+-webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.25);
+-moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.25);
+font-family: MinionProMedium;
+font-size: 20px;
+padding: 5px;
+margin-top: 10px;
+width: 100%;
+}
+
+.link-box a {
+  color: white;
+  text-shadow: 0.15px 0.15px 0.2px white, -0.15px -0.1px 0.2px white;
+}
+
+.link-box:hover {
+  color: white;
+  background-color: rgba(191, 128, 163, 0.5);
+  transition: 0.5s;
+}
