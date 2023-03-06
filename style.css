@@ -999,6 +999,7 @@ textarea:focus {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 400px;
   height: 100vh;
   max-width: 100vw;
 }
